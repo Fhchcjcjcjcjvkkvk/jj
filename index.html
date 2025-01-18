@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vortex FAQ</title>
+    <link rel="icon" href="vbox.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: bold;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .faq-section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-out;
+        }
+
+        .faq-section h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .faq-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .faq-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .faq-section ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Slide-in Animation */
+        @keyframes slideIn {
+            0% { transform: translateX(-100%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+        .timer {
+            font-weight: bold;
+            color: #d9534f;
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vortex FAQ</h1>
+    </header>
+
+    <div class="faq-section">
+        <h2>How secure is Vortex?</h2>
+        <p>Vortex is more secure than mass market messengers like WhatsApp and Line. We are based on the MVProto protocol built upon time-tested algorithms to make security compatible with high-speed delivery and reliability on weak connections. We are continuously working with the community to improve the security of our protocol and clients.</p>
+    </div>
+
+    <div class="faq-section">
+        <h2>How does Vortex encryption work?</h2>
+        <p>We support two layers of secure encryption. Server-client encryption is used in Secret Chats, and an additional layer of client-client encryption is used. All data, regardless of type, is encrypted in the same way — be it text, media, or files. Our encryption is based on 256-bit symmetric AES encryption, 2048-bit RSA encryption, and Diffie–Hellman secure key exchange.</p>
+    </div>
+
+    <div class="faq-section">
+        <h2>What is the Self-Destruct Timer?</h2>
+        <p>The Self-Destruct Timer is available for all messages in Secret Chats and for media in private cloud chats.</p>
+        <p>To set the timer, simply tap the "auto-vanishing" (in the input field on iOS, top bar on Android), and then choose the desired time limit. The clock starts ticking the moment the message is displayed on the recipient's screen (gets two check marks). As soon as the time runs out, the message disappears from both devices.</p>
+        <p>Please note that the timer in Secret Chats only applies to messages that were sent after the timer was set. It has no effect on earlier messages.</p>
+    </div>
+
+    <div class="faq-section">
+        <h2>What is this 'Encryption Key' thing?</h2>
+        <p>The participating devices exchange encryption keys using the so-called Diffie-Hellman key exchange. After the secure end-to-end connection has been established, we generate a picture that visualizes the encryption key for your chat. You can then compare this image with the one your friend has — if the two images are the same, you can be sure that the secret chat is secure, and no man-in-the-middle attack can succeed.</p>
+    </div>
+
+</body>
+</html>
